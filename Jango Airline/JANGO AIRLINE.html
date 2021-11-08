@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="style/jangostyle.css">
+
+<title>WELCOME TO JANGO AIRLINES</title>
+
+</head>
+
+
+<body> 
+
+<button class="tablink" onclick="openPage('Booking')" id="defaultOpen">Booking</button>
+<button class="tablink" onclick="openPage('Flight News')">Flight News</button>
+<button class="tablink" onclick="openPage('Flight Assistant')">Flight Assistant</button>
+<button class="tablink" onclick="openPage('About')">About</button>
+
+
+<div id="Booking" class="tabcontent">
+
+<!--<div class="scrollmenu">
+ <a href="#booking">Booking</a>
+ <a href="#flight_news">Flight News</a>
+ <a href="#Flight_assistant">Flight Assistant</a>
+ <a href="#about">About</a>
+ 
+</div>-->
+
+<form> 
+
+<p> 
+
+<h2>Personal Information</h2>
+
+<select id="Flights" name="Flights">
+<option selected hidden>FLIGHT</option>
+ <option value="local">Egypt</option>
+ <option value="kuwait">Kuawit</option>
+ <option value="Oman">Oman</option>
+ <option value="lebanon">Lebanon</option>
+ <option value="bahrain">Bahrain</option>
+</select>
+
+
+
+<select id="Title" name="Title">
+<option selected hidden>TITLE</option>
+ <option value="1">MR</option>
+ <option value="2">MRS</option>
+ <option value="3">MISS</option>
+ <option value="4">MS</option>
+ <option value="5">DR</option>
+ </select>
+
+
+<select id="Age" name="Age">
+<option selected hidden>AGE</option>
+<option value="under 20">Under 20<19)</option>
+ <option value="1">20-29</option>
+ <option value="2">30-39</option>
+ <option value="3">40-49</option>
+ <option value="4">50-59</option>
+ <option value="5">Over 60(>60)</option>
+</select>
+
+
+<select id="Gender" name="Gender">
+<option selected hidden>GENDER</option>
+<option value="male">Male</option>
+ <option value="female">Female</option>
+ </select>
+
+
+
+ <select id="employment" name="employment">
+ <option selected hidden>EMPLOYMENT</option>
+ <option value="employed">Employed</option>
+ <option value="unemployed">Unemployed</option>
+ <option value="student">Student</option>
+ </select>
+ <br>
+
+
+
+ <h2> What is your date of birth?</h2>
+
+<select id="day" name="day">
+ <option selected hidden>DAY</option>
+ <option value="1">1</option>
+ <option value="2">2</option>
+ <option value="3">3</option>
+ <option value="4">4</option>
+ <option value="5">5</option>
+ <option value="6">6</option>
+ <option value="7">7</option>
+ <option value="8">8</option>
+ <option value="9">9</option>
+ <option value="10">10</option>
+ <option value="11">11</option>
+ <option value="12">12</option>
+ <option value="13">13</option>
+ <option value="14">14</option>
+ <option value="15">15</option>
+ <option value="16">16</option>
+ <option value="17">17</option>
+ <option value="18">18</option>
+ <option value="19">19</option>
+ <option value="20">20</option>
+ <option value="21">21</option>
+ <option value="22">22</option>
+ <option value="23">23</option>
+ <option value="24">24</option>
+ <option value="25">25</option>
+ <option value="26">26</option>
+ <option value="27">27</option>
+ <option value="28">28</option>
+ <option value="29">29</option>
+ <option value="30">30</option>
+ <option value="31">31</option>
+ </select>
+
+ 
+<select id="month" name="month">
+    <option>MONTH</option>
+ <option value="1">January</option>
+ <option value="2">February</option>
+ <option value="3">March</option>
+ <option value="4">April</option>
+ <option value="5">May</option>
+ <option value="6">June</option>
+ <option value="7">July</option>
+ <option value="8">August</option>
+ <option value="9">September</option>
+ <option value="10">October</option>
+ <option value="11">November</option>
+ <option value="12">December</option>
+ </select>
+
+<select id="year" name="year">
+    <option>YEAR</option>
+    <option value="1960">1960</option>
+    <option value="1961">1961</option>
+    <option value="1962">1962</option>
+    <option value="1963">1963</option>
+    <option value="1964">1964</option>
+    <option value="1965">1965</option>
+    <option value="1966">1966</option>
+    <option value="1967">1967</option>
+    <option value="1968">1968</option>
+    <option value="1969">1969</option>
+    <option value="1970">1970</option>
+    <option value="1971">1971</option>
+    <option value="1972">1972</option>
+    <option value="1973">1973</option>
+    <option value="1974">1974</option>
+    <option value="1975">1975</option>
+    <option value="1976">1976</option>
+    <option value="1977">1977</option>
+    <option value="1978">1978</option>
+    <option value="1979">1979</option>
+    <option value="1980">1980</option>
+    <option value="1981">1981</option>
+    <option value="1982">1982</option>
+    <option value="1983">1983</option>
+    <option value="1984">1984</option>
+    <option value="1985">1985</option>
+    <option value="1986">1986</option>
+    <option value="1987">1987</option>
+    <option value="1988">1988</option>
+    <option value="1989">1989</option>
+    <option value="1990">1990</option>
+    <option value="1991">1991</option>
+    <option value="1992">1992</option>
+    <option value="1993">1993</option>
+    <option value="1994">1994</option>
+    <option value="1995">1995</option>
+    <option value="1996">1996</option>
+</select>
+<br><br>
+  <form action="jango_airlines.php" method="post">
+  <button type="submit" value="Submit">Submit</button>
+  <button type="reset" value="Reset">Reset</button>
+  
+</form>
+</div>
+<div id="Flight News" class="tabcontent">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat est velit egestas dui id ornare. Risus ultricies tristique nulla aliquet. Ut morbi tincidunt augue interdum velit euismod in. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Egestas congue quisque egestas diam in arcu. Orci ac auctor augue mauris augue neque gravida. Facilisis gravida neque convallis a cras. Quis vel eros donec ac odio tempor orci dapibus ultrices. Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Ullamcorper morbi tincidunt ornare massa eget egestas. Sed risus pretium quam vulputate dignissim suspendisse in est ante. Eu nisl nunc mi ipsum faucibus vitae aliquet nec. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Vitae aliquet nec ullamcorper sit amet. Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac.
+</p>
+</div>
+
+<div id="Flight Assistant" class="tabcontent">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl pretium fusce id velit ut. Sed lectus vestibulum mattis ullamcorper velit. Tristique et egestas quis ipsum suspendisse ultrices. Eget nunc scelerisque viverra mauris in. Iaculis nunc sed augue lacus. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque habitant. Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Ultricies lacus sed turpis tincidunt id aliquet risus. Aliquet bibendum enim facilisis gravida neque convallis a. Eu scelerisque felis imperdiet proin fermentum leo vel. Donec pretium vulputate sapien nec sagittis aliquam. Quam pellentesque nec nam aliquam sem et tortor consequat id. Orci nulla pellentesque dignissim enim sit amet venenatis urna cursus. Sem integer vitae justo eget magna. Id consectetur purus ut faucibus pulvinar elementum integer. Enim facilisis gravida neque convallis a. Sapien pellentesque habitant morbi tristique senectus et netus et.
+</p>
+</div>
+
+<div id="About" class="tabcontent">
+
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sodales ut eu sem integer vitae justo eget. Et odio pellentesque diam volutpat. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida. Augue eget arcu dictum varius duis at consectetur lorem. At volutpat diam ut venenatis tellus in metus. Tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum sed arcu non odio. Sed turpis tincidunt id aliquet. Duis ut diam quam nulla porttitor massa id neque aliquam. Ac feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Turpis massa sed elementum tempus egestas sed sed risus pretium.
+</p>
+</div>
+
+<script>
+function openPage(pageName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

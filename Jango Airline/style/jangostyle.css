@@ -1,0 +1,68 @@
+body {
+    background-image: url('JangoB.JPG');
+    background-attachment: scroll;
+    font-family: cursive;
+}
+
+h2 {
+    color: #A0522D;
+    font-family: cursive;
+}
+
+p {
+    text-align: center;
+    font-family: Cursive;
+}
+
+div.scrollmenu {
+    background-color: #c19089;
+    overflow: auto;
+    white-space: nowrap;
+    border-radius: 15px;
+    border-style: double;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: #663300;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    border-right: 1px solid #bbb;
+    border-radius: 15px;
+}
+
+div.scrollmenu a:hover {
+    background-color: #eac1c5;
+    border-right: 1px solid #bbb;
+}
+
+select {
+    background-color: #eac1c5;
+    padding: 12px;
+    border-radius: 15px;
+    font-family: cursive;
+    accent-color: gold;
+}
+
+button {
+    background-color: #c19089;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-size: 20px;
+    font-family: cursive;
+    cursor: pointer;
+    box-shadow: 0 9px rgb(51, 50, 48);
+}
+
+button:hover {
+    background-color: #663300;
+}
+
+button:active {
+    background-color: #663300;
+    box-shadow: 0 5px grey;
+    transform: translateX (10PX);
+}
